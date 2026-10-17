@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(45deg, pink, purple, blue);
+    background-size: 300% 300%;
+    animation: bg 5s infinite alternate;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px white;
+    animation: float 2s infinite alternate;
+}
+
+h1 {
+    color: deeppink;
+}
+
+.heart {
+    font-size: 40px;
+    animation: beat 1s infinite;
+}
+
+button {
+    background: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@keyframes beat {
+    50% { transform: scale(1.4); }
+}
+
+@keyframes float {
+    to { transform: translateY(-15px); }
+}
+
+@keyframes bg {
+    to { background-position: 100% 100%; }
+}
